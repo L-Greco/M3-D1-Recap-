@@ -1,0 +1,2 @@
+1. With the syntax : function "name" (parameters) {..} what is the variable that
+name is located in ?
