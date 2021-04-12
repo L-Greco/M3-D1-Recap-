@@ -235,5 +235,10 @@ console.log(convertNumberToString(21))
 // 19)
 // Create a function that given a phrase returns its acronym, like British Broadcasting Corporation returns BBC
 const acronym = function (str) {
-    
-}
+    let onlywords=str.split(" ") //creating array to place the words without the space
+    let acronymString=""
+ for (i=0; i<onlywords.length; i++){
+     acronymString= acronymString+ onlywords[i].charAt(0).toUpperCase()
+ } return acronymString
+} 
+console.log(acronym("kostandinos makaronas as known as mak"))
