@@ -241,4 +241,4 @@ const acronym = function (str) {
      acronymString= acronymString+ onlywords[i].charAt(0).toUpperCase()
  } return acronymString
 } 
-console.log(acronym("kostandinos makaronas as known as mak"))
+console.log(acronym("kostandinos makaronas as known as kostas"))
