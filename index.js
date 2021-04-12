@@ -134,7 +134,7 @@ const typeOfAngles = function (n1) {
                 console.log("This is a straight angle")
             }else {console.log("This is a reflex angle!")}
         }
-    typeOfAngles(280)
+    // typeOfAngles(280)
 // 13)
 
 // Create a function to find the index of the greatest element of a given array of integers
@@ -230,7 +230,7 @@ const convertNumberToString = function (n1) {
        
      
 }
-console.log(convertNumberToString(21))
+console.log(convertNumberToString(105))
 
 // 19)
 // Create a function that given a phrase returns its acronym, like British Broadcasting Corporation returns BBC
@@ -241,4 +241,37 @@ const acronym = function (str) {
      acronymString= acronymString+ onlywords[i].charAt(0).toUpperCase()
  } return acronymString
 } 
-console.log(acronym("kostandinos makaronas as known as kostas"))
+console.log(acronym("Federal Bureau Investigation"))
+
+
+//************************************************************************ADVANCED ***************************************************
+/* 6) STEPS
+
+Write a function that accepts a positive number N.
+The function should console log a step shape
+with N levels using the # character.  Make sure the
+step has spaces on the right hand side!
+
+--- Examples
+
+    steps(2)
+        '# '
+        '##'
+    steps(3)
+        '#  '
+        '## '
+        '###'
+    steps(4)
+        '#   '
+        '##  '
+        '### '
+        '####' */
+const step = function (n1) {
+    let str ="#"
+    let space = " "
+    for (i=1;i<=n1; i++) {      
+            console.log(`${str.repeat(i)}${space.repeat(n1-i)}`)
+        }
+    }
+
+step(10)
